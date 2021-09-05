@@ -1,7 +1,7 @@
 # This file and its contents are licensed under the Apache License 2.0.
 # Please see the included NOTICE for copyright information and LICENSE for a copy of the license.
 
-dataNodes: 3
+dataNodes: 1
 
 # To prevent very long names, we override the name, otherwise it would default to
 # timescaledb-multinode (the name of the chart)
@@ -11,7 +11,7 @@ image:
   # Image was built from
   # https://github.com/timescale/timescaledb-docker-ha
   repository: timescale/timescaledb-ha
-  tag: pg12-ts2.0.0-p0
+  tag: pg13.4-ts2.4.1-p1 # pg12-ts2.0.0-p0
   pullPolicy: IfNotPresent
 
 # Credentials used by PostgreSQL
